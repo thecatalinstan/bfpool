@@ -75,6 +75,6 @@ bfbuffer_t bfpool_buffer( bfpool_t pool ) {
 }
 
 void bfpool_buffer_free( bfpool_t pool, bfbuffer_t buf) {
-	
+	return _bfpool_push(pool, buf);
 }
 
